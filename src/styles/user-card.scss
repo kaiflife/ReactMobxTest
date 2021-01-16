@@ -1,0 +1,58 @@
+.user-card {
+  display: flex;
+  flex-basis: 31%;
+  background: lightgray;
+  margin: 0 0 1.75% 1.75%;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 12px;
+
+  @media (max-width: 800px) {
+    flex-basis: 48%;
+  }
+
+  @media (max-width: 400px) {
+    flex-basis: 80%;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:hover {
+    background: #282c34;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+  }
+}
+
+.user-avatar {
+  width: 64px;
+  height: 64px;
+
+  @media (max-width: 428px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.big-user-avatar {
+  width: 212px;
+  height: 149px;
+
+  @media (max-width: 428px) {
+    width: 106px;
+    height: 74px;
+  }
+}
+
+.modal-user-card {
+  .user-info {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

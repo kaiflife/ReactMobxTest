@@ -1,0 +1,77 @@
+.button {
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid transparent;
+  width: fit-content;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button-red {
+  background: red;
+
+  color: white;
+
+  &.button-transparent {
+    background: none;
+    border: 1px solid red;
+    color: red;
+
+    &:hover {
+      transition: 0.5s ease;
+      background: red;
+      color: white;
+    }
+  }
+}
+
+.button-blue {
+  background: blue;
+  color: white;
+
+  &:hover {
+    transition: 0.5s ease;
+    background: none;
+    border: 1px solid blue;
+    color: blue;
+  }
+
+  &.button-transparent {
+    background: none;
+    border: 1px solid blue;
+    color: blue;
+
+    &:hover {
+      transition: 0.5s ease;
+      background: blue;
+      color: white;
+    }
+  }
+}
+
+
+.floating-action-button {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+}
+
+.fab-bottom-right {
+  right: 1.75%;
+  bottom: 1.75%;
+}
+
+.radius-50 {
+  border-radius: 50px;
+}
+
+.fab-green {
+  background: palegreen;
+  color: white;
+}

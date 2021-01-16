@@ -1,0 +1,14 @@
+.users-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  margin-bottom: 76px;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+
+  .pagination {
+    flex-basis: 100%;
+  }
+}

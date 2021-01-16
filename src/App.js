@@ -1,21 +1,21 @@
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
+  Route, Redirect,
 } from "react-router-dom";
 import UsersCards from "./pages/UserCards";
-
 import './styles/App.scss';
 
-function App() {
-  return (
-      <Router>
-        <Switch>
-          <Route path='/users' component={UsersCards} />
-          <Route path='/' to='/users' />
-        </Switch>
-      </Router>
-  );
-}
+const App = () => {
+    return (
+        <Router>
+            <Switch>
+                <Route path='/users' component={UsersCards} />
+                <Redirect from='/' to='/users' />
+            </Switch>
+        </Router>
+    );
+};
 
 export default App;

@@ -1,8 +1,9 @@
-import Users from "./users";
+import UsersStore from "./UsersStore";
+import PaginationStore from "./PaginationStore";
 
-const users = new Users();
-const store = {
-    users
+const stores = {
+    UsersStore,
+    PaginationStore,
 }
 
-export default store;
+export default stores;

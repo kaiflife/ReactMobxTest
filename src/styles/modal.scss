@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+
+  .transparent {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+  }
+
+  .inner-content {
+    position: relative;
+    z-index: 4;
+    background: white;
+  }
+
+  .close-modal {
+    background: orangered;
+    color: white;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+}
