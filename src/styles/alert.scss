@@ -25,9 +25,12 @@
 
 .alert-green {
   background-color: rgb(209, 231, 221);
-  border-bottom-color: rgb(186, 219, 204);
+  border-color: rgb(186, 219, 204);
   color: rgb(15, 81, 50);
-  border-top-color: rgb(186, 219, 204);
-  border-left-color: rgb(186, 219, 204);
-  border-right-color: rgb(186, 219, 204);
+}
+
+.alert-red {
+  background-color: rgb(231, 209, 215);
+  border-color: rgb(219, 186, 189);
+  color: rgb(245, 55, 55);
 }

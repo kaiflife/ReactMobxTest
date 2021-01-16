@@ -1,22 +1,30 @@
-import { makeObservable, observable, action, computed } from "mobx"
+import {makeObservable, observable, action, computed} from "mobx"
 
 class PaginationStore {
-    currentPage = 1;
+    paginationData = {
+        total_pages: 0,
+        per_page: 0,
+    }
 
     constructor() {
         makeObservable(this, {
-            currentPage: observable,
-            total: computed,
+            paginationData: observable,
+            totalPages: computed,
+            perPage: computed,
             update: action,
         });
     }
 
-    update(page) {
-        this.currentPage = page || 1;
+    update(data) {
+        this.paginationData = {...this.paginationData, ...data};
     }
 
-    get total() {
-        return this.currentPage;
+    get perPage() {
+        return this.paginationData.per_page;
+    }
+
+    get totalPages() {
+        return this.paginationData.total_pages;
     }
 }
 
